@@ -61,13 +61,13 @@ function ChannelLink({ channel }) {
       rel={isMail ? undefined : "noopener noreferrer"}
       className={`shine-card group flex items-center justify-between rounded-xl border border-white/8 bg-[#0a1628]/60 px-5 py-4 backdrop-blur-sm transition-all duration-200 ${a.border} hover:bg-[#0a1628]/90 hover:shadow-lg ${a.glow}`}
     >
-      <div className="flex items-center gap-4">
-        <span className={`h-6 w-0.5 rounded-full ${a.bar}`} aria-hidden="true" />
-        <div>
+      <div className="flex min-w-0 items-center gap-4">
+        <span className={`h-6 w-0.5 shrink-0 rounded-full ${a.bar}`} aria-hidden="true" />
+        <div className="min-w-0">
           <p className={`font-mono text-[11px] uppercase tracking-[0.22em] ${a.label}`}>
             {channel.label}
           </p>
-          <p className="mt-1 text-sm font-medium text-slate-200">{channel.handle}</p>
+          <p className="mt-1 break-all text-sm font-medium text-slate-200">{channel.handle}</p>
           <p className="mt-0.5 text-xs text-slate-500">{channel.note}</p>
         </div>
       </div>

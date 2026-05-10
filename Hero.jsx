@@ -79,14 +79,14 @@ export default function Hero() {
       <div className="relative mx-auto max-w-6xl">
         {/* Available badge — emerald (green = available, natural signal) */}
         <div className="mb-10 flex items-center gap-4">
-          <span className="relative flex h-2.5 w-2.5">
+          <span className="relative flex h-2.5 w-2.5 shrink-0">
             <span
               className="animate-pulse-ring absolute inline-flex h-full w-full rounded-full bg-emerald-400"
               aria-hidden="true"
             />
             <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 shadow-md shadow-emerald-400/60" />
           </span>
-          <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-emerald-400/70">
+          <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-emerald-400/70 sm:text-[11px] sm:tracking-[0.28em]">
             Available for freelance — Skopje, MK
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function Hero() {
         </h1>
 
         {/* Terminal tech line — violet path, emerald cursor */}
-        <div className="mt-6 flex items-center gap-2">
+        <div className="mt-6 flex flex-wrap items-center gap-x-2 gap-y-1">
           <span className="font-mono text-xs text-violet-500/40">~/dev</span>
           <span className="font-mono text-xs text-violet-500/25">›</span>
           <span className="font-mono text-xs text-slate-500">
@@ -155,7 +155,7 @@ export default function Hero() {
         </div>
 
         {/* Stats bar */}
-        <dl className="mt-20 grid grid-cols-3 gap-x-6 gap-y-8 border-t border-violet-900/30 pt-10">
+        <dl className="mt-16 grid grid-cols-1 gap-y-8 border-t border-violet-900/30 pt-10 sm:mt-20 sm:grid-cols-3 sm:gap-x-6">
           {[
             { k: "Role",  v: "Full-stack developer" },
             { k: "Focus", v: "Digital products & websites" },
